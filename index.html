@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Agronegócio | Inovação e Sustentabilidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Agro<span>Futuro</span></div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                &#9776;
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#pilares">Pilares</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <h1>O Futuro do Agronegócio é Sustentável</h1>
+        <p>Unindo tecnologia de ponta, produtividade e respeito ao meio ambiente para alimentar o mundo.</p>
+        <a href="#pilares" class="btn">Saiba Mais</a>
+    </section>
+
+    <section class="container" id="pilares">
+        <h2 class="section-title">Pilares do Setor</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Tecnologia & Inovação</h3>
+                <p>Uso de drones, sensores IoT, tratores autônomos e inteligência artificial para monitorar lavouras e otimizar a colheita em tempo real.</p>
+            </div>
+            <div class="card">
+                <h3>Sustentabilidade</h3>
+                <p>Práticas como o plantio direto, rotação de culturas e sistemas ILPF (Integração Lavoura-Pecuária-Floresta) que reduzem os impactos ambientais.</p>
+            </div>
+            <div class="card">
+                <h3>Economia Global</h3>
+                <p>O agronegócio é um dos principais motores econômicos do país, gerando empregos, movimentando o PIB e liderando exportações mundiais.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="simulator-section" id="simulador">
+        <div class="container text-center">
+            <h2 class="section-title">Simulador de Produtividade</h2>
+            <p>Insira a área do seu plantio (em hectares) para estimar a produção ideal usando tecnologia sustentável.</p>
+            
+            <div class="sim-form">
+                <input type="number" id="hectares" placeholder="Ex: 50" min="1">
+                <button id="btn-calcular" class="btn">Calcular Estimativa</button>
+            </div>
+            
+            <div id="resultado" class="result-box hidden">
+                <p>Com manejo tecnológico, sua produção estimada é de:</p>
+                <h3><span id="qtd-sacas">0</span> sacas de grãos</h3>
+                <small>*Cálculo baseado na média de alta performance de 80 sacas por hectare.</small>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="sobre">
+        <div class="container">
+            <div class="about-flex">
+                <div class="about-text">
+                    <h2>Alimentando o Planeta com Responsabilidade</h2>
+                    <p>O agronegócio moderno vai muito além do campo. Ele envolve uma cadeia complexa que conecta a ciência de sementes, a indústria de maquinários, a logística global e a mesa do consumidor final.</p>
+                    <br>
+                    <p>O grande desafio atual é aumentar a produtividade vertical (produzir mais no mesmo espaço de terra) garantindo a preservação dos nossos recursos naturais para as próximas gerações.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroFuturo. Todos os direitos reservados.</p>
+        <p>Tecnologia e Campo em Harmonia.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
